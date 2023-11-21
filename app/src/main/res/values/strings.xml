@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TarjetaPresentacion</string>
+
+    <string name="title">Inazuma eleven</string>
+    <string name="subtitle">El mejor juego de furbo</string>
+    <string name="telephone">+00 (00) 000 000</string>
+    <string name="social_media">socialmediahandle</string>
+    <string name="email">email@domail.com</string>
+</resources>
