@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.MaterialTheme
@@ -28,6 +27,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.tarjetapresentacion.ui.theme.TarjetaPresentacionTheme
 
+import androidx.compose.ui.graphics.Color
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +37,7 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    color = Color.Cyan
                 ) {
                     ComposeApp()
                 }
@@ -47,6 +48,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ComposeApp(){
+    //val fondoColor = Color.Blue
+
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
@@ -149,6 +152,11 @@ fun Bloque2(
 @Composable
 fun GreetingPreview() {
     TarjetaPresentacionTheme {
-        ComposeApp()
+        Surface(
+            modifier = Modifier.fillMaxSize(),
+            color = Color.Cyan
+        ) {
+            ComposeApp()
+        }
     }
 }
